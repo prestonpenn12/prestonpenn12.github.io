@@ -15,11 +15,14 @@
   <aside class="sidebar">
     <div class="sidebar-top">
       <h1>Preston C. Pennington</h1>
-      <p class="subtitle">PhD Candidate<br>Department of Biology<br>Washington University in St. Louis</p>
+      <p class="role">PhD Candidate</p>
+      <p class="tagline">Machine Learning &middot; Ecological Data</p>
+      <p class="subtitle">Department of Biology<br>Washington University in St. Louis</p>
       <nav>
         <a href="index.html">Home</a>
         <a href="research.html" class="active">Research</a>
         <a href="publications.html">Publications</a>
+        <a href="about.html">About Me</a>
       </nav>
     </div>
     <div class="sidebar-bottom">
@@ -31,7 +34,16 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0ZM7.369 4.378a.87.87 0 1 1 0 1.74.87.87 0 0 1 0-1.74ZM6.61 7.23h1.518v9.54H6.61V7.23Zm3.708 0h4.104c3.756 0 5.16 2.484 5.16 4.77 0 2.634-1.842 4.77-5.16 4.77H10.318V7.23Zm1.518 1.356v6.828h2.586c2.724 0 3.642-1.704 3.642-3.414 0-1.578-.828-3.414-3.642-3.414h-2.586Z"/></svg>
         ORCID
       </a>
+      <a href="https://github.com/prestonpenn12" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/preston-pennington-b333b7137/" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
       <a href="mailto:p.c.pennington@wustl.edu">p.c.pennington@wustl.edu</a>
+      <a href="mailto:prestonpen12@gmail.com">prestonpen12@gmail.com</a>
     </div>
   </aside>
 
@@ -39,28 +51,80 @@
     <h2>Research</h2>
 
     <div class="research-item">
-      <h3>Predicting Trophic Interactions</h3>
+      <h3>AI-Driven Food Web Prediction</h3>
       <p>
-        Understanding who eats whom in ecological communities is fundamental to
-        ecology, yet direct observation of feeding interactions remains impractical
-        for most systems. My research develops machine learning approaches that
-        leverage species traits (including body mass, phylogenetic relatedness,
-        and taxonomic identity) to predict trophic interactions. This work aims
-        to improve our ability to construct and analyze food webs, particularly
-        in communities where empirical interaction data are incomplete.
+        Develops machine learning approaches that predict trophic interactions
+        from species traits and evolutionary relationships. Trains gradient-boosted
+        classifiers on consumer-resource interactions from the Global Biotic
+        Interactions database, integrated with phylogenetic embeddings derived
+        from the Open Tree of Life. Aims to make food-web inference tractable
+        for communities where direct observation is impractical.
       </p>
+      <div class="related-papers">
+        <p class="paper">
+          <strong>Pennington, P.C.</strong>, Rubio, W.B., Olson, A.R., Martinez, N.D., &amp; Dell, A.I.
+          Inferring the structure of complex food webs using machine learning. <em>(in-prep)</em>
+        </p>
+        <p class="paper">
+          <strong>Pennington, P.C.</strong>, Olson, A.R., Martinez, N.D., &amp; Dell, A.I.
+          Phylogenetic signal of trophic interactions across the tree of life. <em>(in-prep)</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="research-item">
+      <h3>Body-Mass Database Harmonization</h3>
+      <p>
+        Builds an end-to-end Python pipeline that integrates nearly 100
+        heterogeneous source databases and published allometric equations
+        into a unified body-mass corpus spanning hundreds of thousands of
+        species. Includes a phylogenetic imputation pipeline for species
+        without direct measurements, supporting downstream macroecological
+        and ecosystem modeling.
+      </p>
+      <div class="related-papers">
+        <p class="paper">
+          <strong>Pennington, P.C.</strong>, Hemphill, J., &amp; Dell, A.I.
+          Inferring body size across the tree of life using machine learning. <em>(in-development)</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="research-item">
+      <h3>Large-Scale Ecological Prediction</h3>
+      <p>
+        Applies trained interaction models to study food-web structure across
+        continental and decadal gradients, integrating long-term ecological
+        observation networks with historical disturbance datasets. Focuses on
+        how community assembly and trophic structure shift across space and
+        time.
+      </p>
+      <div class="related-papers">
+        <p class="paper">
+          <strong>Pennington, P.C.</strong> &amp; Dell, A.I.
+          Food web structure and dynamics using the National Ecological Observatory Network. <em>(in-development)</em>
+        </p>
+        <p class="paper">
+          <strong>Pennington, P.C.</strong>, Olson, A.R., Martinez, N.D., &amp; Dell, A.I.
+          Food web assembly following severe disturbance on an island metacommunity. <em>(in-development)</em>
+        </p>
+      </div>
     </div>
 
     <div class="research-item">
       <h3>Effects of Microplastics on Freshwater Fish</h3>
       <p>
-        Microplastic pollution is increasingly prevalent in freshwater ecosystems,
-        yet its effects on fish behavior and physiology are not fully understood.
-        My research examined how microplastic exposure influenced foraging behavior,
-        swimming performance, and body condition in freshwater fish species. This
-        work contributed to a growing understanding of how emerging contaminants
-        affect aquatic organisms at the individual level.
+        Earlier research examined how microplastic exposure influences
+        foraging behavior, swimming performance, and body condition in
+        freshwater fish species, contributing to understanding of how
+        emerging contaminants affect aquatic organisms.
       </p>
+      <div class="related-papers">
+        <p class="paper">
+          <strong>Pennington, P.C.</strong>, Schindler, M.S., Louison, M.J., &amp; Dell, A.I.
+          Group behavioral responses of juvenile golden shiners <em>Notemigonus crysoleucas</em> to microplastic exposure. <em>(in-development)</em>
+        </p>
+      </div>
     </div>
   </main>
 

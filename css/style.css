@@ -63,8 +63,25 @@ body {
   letter-spacing: -0.01em;
 }
 
+.sidebar .role {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  font-weight: 500;
+  margin-top: 0.3rem;
+  margin-bottom: 0.15rem;
+}
+
+.sidebar .tagline {
+  font-size: 0.78rem;
+  color: var(--color-accent);
+  font-style: italic;
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.005em;
+  white-space: nowrap;
+}
+
 .sidebar .subtitle {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--color-text-light);
   margin-bottom: 2.5rem;
   line-height: 1.5;
@@ -190,6 +207,23 @@ body {
 .research-item p {
   color: var(--color-text-light);
   font-size: 0.95rem;
+}
+
+.research-item .related-papers {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-border);
+}
+
+.research-item .related-papers .paper {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+}
+
+.research-item .related-papers .paper:last-child {
+  margin-bottom: 0;
 }
 
 /* ── Publications List ── */
