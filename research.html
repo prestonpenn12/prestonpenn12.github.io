@@ -50,63 +50,76 @@
   <main class="main">
     <h2>Research</h2>
 
+    <p>
+      My dissertation asks whether evolutionary history carries enough
+      information about how species live in communities to reconstruct
+      community structure where direct observation is thin. It runs in three
+      steps: show that the information is there, turn it into predictors,
+      then apply the predictors to communities no one has observed in full.
+    </p>
+
     <div class="research-item">
-      <h3>AI-Driven Food Web Prediction</h3>
+      <h3>Is the Information There?</h3>
       <p>
-        Develops machine learning approaches that predict trophic interactions
-        from species traits and evolutionary relationships. Trains gradient-boosted
-        classifiers on consumer-resource interactions from the Global Biotic
-        Interactions database, integrated with phylogenetic embeddings derived
-        from the Open Tree of Life. Aims to make food-web inference tractable
-        for communities where direct observation is impractical.
+        Places more than a million recorded feeding interactions on a dated
+        tree of life and measures how strongly evolutionary history
+        structures trophic roles: how many partners a species has, which
+        partners close relatives share, and how widely those partners spread
+        across the tree. Asks at what taxonomic scale that structure appears,
+        and whether what eats a species is more conserved than what it eats.
+        This work also builds the map of the tree of life that the predictors
+        below read.
       </p>
       <div class="related-papers">
         <p class="paper">
-          <strong>Pennington, P.C.</strong>, Rubio, W.B., Olson, A.R., Martinez, N.D., &amp; Dell, A.I.
-          Inferring the structure of complex food webs using machine learning. <em>(in-prep)</em>
-        </p>
-        <p class="paper">
-          <strong>Pennington, P.C.</strong>, Olson, A.R., Martinez, N.D., &amp; Dell, A.I.
-          Phylogenetic signal of trophic interactions across the tree of life. <em>(in-prep)</em>
+          Evolutionary history structures trophic roles across the tree of life. <em>(in preparation)</em>
         </p>
       </div>
     </div>
 
     <div class="research-item">
-      <h3>Body-Mass Database Harmonization</h3>
+      <h3>Turning It into Predictors</h3>
       <p>
-        Builds an end-to-end Python pipeline that integrates nearly 100
-        heterogeneous source databases and published allometric equations
-        into a unified body-mass corpus spanning hundreds of thousands of
-        species. Includes a phylogenetic imputation pipeline for species
-        without direct measurements, supporting downstream macroecological
-        and ecosystem modeling.
+        Develops two machine learning models that read nothing but a
+        species' position on a map of the tree of life. The first scores
+        whether one species eats another and assembles those scores into a
+        food web from a species list alone, validated against held-out
+        interactions, withheld species, and more than a thousand observed
+        local food webs. The second predicts adult body mass, trained on a
+        body-mass corpus harmonized from over 100 sources and published
+        allometric conversions, and validated on families with no measured
+        member. Applied across the tree, it supplies a mass estimate for
+        every described species.
       </p>
       <div class="related-papers">
         <p class="paper">
-          <strong>Pennington, P.C.</strong>, Hemphill, J., &amp; Dell, A.I.
-          Inferring body size across the tree of life using machine learning. <em>(in-development)</em>
+          Evolutionary history predicts the structure of local food webs. <em>(in preparation)</em>
+        </p>
+        <p class="paper">
+          Body size is conserved across the tree of life. <em>(in preparation)</em>
         </p>
       </div>
     </div>
 
     <div class="research-item">
-      <h3>Large-Scale Ecological Prediction</h3>
+      <h3>Applying the Predictors Where Observation Is Thin</h3>
       <p>
-        Applies trained interaction models to study food-web structure across
-        continental and decadal gradients, integrating long-term ecological
-        observation networks with historical disturbance datasets. Focuses on
-        how community assembly and trophic structure shift across space and
-        time.
+        Applies both models to communities that have never been observed in
+        full. Across the National Ecological Observatory Network, builds a
+        food web from the species list at every site and year with one fixed
+        model and asks whether aquatic and terrestrial webs are structured
+        differently, and which differences come from ecology rather than from
+        the method and the data products. On an island metacommunity, reads
+        a predicted diet for every animal consumer in a century of survey
+        records and asks how diet breadth changed as the community reassembled
+        after a severe disturbance.
       </p>
       <div class="related-papers">
         <p class="paper">
-          <strong>Pennington, P.C.</strong> &amp; Dell, A.I.
-          Food web structure and dynamics using the National Ecological Observatory Network. <em>(in-development)</em>
+          Food web structure across the National Ecological Observatory Network. <em>(in development)</em>
         </p>
         <p class="paper">
-          <strong>Pennington, P.C.</strong>, Olson, A.R., Martinez, N.D., &amp; Dell, A.I.
-          Food web assembly following severe disturbance on an island metacommunity. <em>(in-development)</em>
+          Food web assembly following severe disturbance on an island metacommunity. <em>(in development)</em>
         </p>
       </div>
     </div>
@@ -115,14 +128,25 @@
       <h3>Effects of Microplastics on Freshwater Fish</h3>
       <p>
         Earlier research examined how microplastic exposure influences
-        foraging behavior, swimming performance, and body condition in
-        freshwater fish species, contributing to understanding of how
-        emerging contaminants affect aquatic organisms.
+        foraging behavior, swimming performance, escape responses, and body
+        condition in freshwater fish species, contributing to understanding of
+        how emerging contaminants affect aquatic organisms.
       </p>
       <div class="related-papers">
         <p class="paper">
-          <strong>Pennington, P.C.</strong>, Schindler, M.S., Louison, M.J., &amp; Dell, A.I.
-          Group behavioral responses of juvenile golden shiners <em>Notemigonus crysoleucas</em> to microplastic exposure. <em>(in-development)</em>
+          Cannon, M.F., <strong>Pennington, P.C.</strong>, Monta&ntilde;o, I., Schindler, M.C., Dell, A.I., &amp; Louison, M.J. (2025).
+          Foraging response of bluegill <em>Lepomis macrochirus</em> to microplastics and subsequent impacts on swimming performance.
+          <em>Animal Behaviour</em>, 221, 123079.
+          <a href="https://doi.org/10.1016/j.anbehav.2025.123079" target="_blank" rel="noopener">DOI</a>
+        </p>
+        <p class="paper">
+          Schindler, M.C., <strong>Pennington, P.C.</strong>, Dell, A.I., &amp; Louison, M.J. (2025).
+          Short-term microplastic exposure fails to affect swimming endurance or body condition in juvenile golden shiners <em>Notemigonus crysoleucas</em>.
+          <em>Canadian Journal of Zoology</em>, 103, 1&ndash;8.
+          <a href="https://doi.org/10.1139/cjz-2024-0098" target="_blank" rel="noopener">DOI</a>
+        </p>
+        <p class="paper">
+          Escape suppression outlasts spatial avoidance in golden shiners and is unaffected by microplastic exposure. <em>(in preparation)</em>
         </p>
       </div>
     </div>

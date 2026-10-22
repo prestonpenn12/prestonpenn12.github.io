@@ -189,6 +189,15 @@ body {
   border-bottom-color: var(--color-link);
 }
 
+/* ── About Me entry lists ── */
+.entries p {
+  margin-bottom: 0.65rem;
+}
+
+.entries p:last-child {
+  margin-bottom: 0;
+}
+
 /* ── Research Cards ── */
 .research-item {
   margin-bottom: 2.5rem;
